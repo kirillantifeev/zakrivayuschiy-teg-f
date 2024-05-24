@@ -6,7 +6,7 @@
 */
 
 :root.theme-light {
-  --font-accent: 'Press Start 2P', Arial, sans-serif;
+  --font-accent: 'Press Start 2P', fantasy, sans-serif;
   --font: 'Inter', Arial, sans-serif;
     --text-weight: 400;
     --text-weight-title: 700;
@@ -15,6 +15,8 @@
     --border-color: rgba(255, 255, 255, 1);
     --heart-color: rgba(255, 0, 0, 1);
     --difference-color: rgba(255, 255, 255, 1);
+    --title-weight-var: "wght" 700;
+    --text-weight-var: "wght" 400;
     --background-image:
     repeating-linear-gradient(
         to right, 
@@ -38,7 +40,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-      --font-accent: 'Press Start 2P', Arial, sans-serif;
+      --font-accent: 'Press Start 2P', fantasy, sans-serif;
       --font: 'Inter', Arial, sans-serif;
     --text-weight: 465;
     --text-weight-title: 785;
@@ -47,6 +49,8 @@
     --border-color: rgba(0, 0, 0, 1);
     --heart-color: rgba(255, 0, 0, 1);
     --difference-color: rgba(0, 204, 20, 1);
+    --title-weight-var: "wght" 785;
+    --text-weight-var: "wght" 465;
     --background-image:
     repeating-linear-gradient(
         to right, 
@@ -71,7 +75,7 @@
 }
 
 :root.theme-dark {
-  --font-accent: 'Press Start 2P', Arial, sans-serif;
+  --font-accent: 'Press Start 2P', fantasy, sans-serif;
   --font: 'Inter', Arial, sans-serif;
     --text-weight: 465;
     --text-weight-title: 785;
@@ -80,6 +84,8 @@
     --border-color: rgba(0, 0, 0, 1);
     --heart-color: rgba(255, 0, 0, 1);
     --difference-color: rgba(0, 204, 20, 1);
+    --title-weight-var: "wght" 785;
+    --text-weight-var: "wght" 465;
     --background-image:    repeating-linear-gradient(
         to right, 
         rgb(0, 0, 0), 

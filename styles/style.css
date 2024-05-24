@@ -13,46 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-@keyframes liked {
-  from {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.1);
-      transform-origin: center;
-  }
-  to {
-      transform: scale(1);
-      transform-origin: center;
-  }
-}
-
-@keyframes liked-sparks {
-  from {
-      opacity: 0%;
-  }
-
-  50% {
-      opacity: 100%;
-  }
-  to {
-      opacity: 0%;
-  }
-}
-
-@keyframes menu_button_rrow {
-  from {
-      transform: translateX(0);
-  }
-
-  50% {
-      transform: translateX(4px);
-  }
-
-  to {
-      transform: translateX(0);
-  }
-}
 
 .page {
   min-inline-size: 320px;
@@ -69,11 +29,10 @@
 
 .header {
   margin-block: 100px;
-  width: clamp(375px, 90%, 700px);
-  max-height: 368px;
+  inline-size: clamp(375px, 90%, 700px);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   grid-template-areas:
       "."
       "logo"
@@ -83,10 +42,16 @@
   text-transform: uppercase;
   justify-items: center;
   border: 2px solid var(--color-text);
+
 }
 
 .header_logo_title {
   font-size: clamp(3.063rem, 1.909rem + 4.923vw, 4.063rem);
+  
+}
+
+.link_title {
+  text-decoration: none;
 }
 
 .header_logo_text {
@@ -178,13 +143,11 @@
   color: var(--color-text);
   position: absolute;
   left: -20px;
-  animation: menu_button_rrow 0.5s ease-in-out infinite;
 }
 
 @media (width <= 376px) {
   .header {
       width: 100%;
-      max-height: 327px;
       grid-template-rows: 1fr min-content 1fr;
   }
 
@@ -206,7 +169,7 @@
 }
 
 .content_card_title {
-  font-weight: 700;
+  font-variation-settings: var(--title-weight-var);
   font-size: 18px;
   line-height: 21.78px;
   padding-block: 5px;
@@ -251,7 +214,7 @@
 
 .content_card_text {
   font-size: 18px;
-  font-weight: 400;
+  font-variation-settings: var(--text-weight-var);
   line-height: 21px;
   margin: 25px;
   margin-top: 22px;
@@ -349,13 +312,7 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-.like-icon.is-liked .heart {
-  animation: liked 0.3s 0.01s normal ease-in;
-}
 
-.like-icon.is-liked .sparks {
-  animation: liked-sparks 0.3s 0.03s normal ease-in;
-}
 
 .sparks {
   opacity: 0;
@@ -423,7 +380,11 @@
   }
 
   .content_card_text {
-      margin-inline-end: 28.95px;
+      margin-inline-end: 27.95px;
+  }
+
+  .content_card_text {
+    margin-top: 25px;
   }
 }
 
@@ -502,7 +463,6 @@
 
 .dialog_block[open] {
   max-width: 353px;
-  height: 191px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -512,7 +472,7 @@
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0 / 75%);
 }
 
 .dialog_block_text {
