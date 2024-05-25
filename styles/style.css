@@ -169,7 +169,7 @@
 }
 
 .content_card_title {
-  font-variation-settings: var(--title-weight-var);
+  font-variation-settings: "wght" var(--title-weight-var);
   font-size: 18px;
   line-height: 21.78px;
   padding-block: 5px;
@@ -214,7 +214,7 @@
 
 .content_card_text {
   font-size: 18px;
-  font-variation-settings: var(--text-weight-var);
+  font-variation-settings: "wght" var(--text-weight-var);
   line-height: 21px;
   margin: 25px;
   margin-top: 22px;
@@ -261,58 +261,6 @@
 .like-icon:hover {
   cursor: pointer;
 }
-
-.like-icon .core {
-  fill: transparent;
-  transition: fill 0.3s linear 0.03s;
-}
-
-.like-icon:hover .core {
-  fill: var(--color-text);
-  transition: fill 0.3s linear;
-}
-
-.like-icon:active .core {
-  fill: var(--heart-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon .main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--color-text);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon .contour {
-  fill: var(--color-text);
-  transition: fill 0.1s linear;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-color);
-  transition: fill 0.3s linear 0.06s;
-}
-
-
 
 .sparks {
   opacity: 0;
@@ -381,11 +329,9 @@
 
   .content_card_text {
       margin-inline-end: 27.95px;
+      margin-top: 25px;
   }
 
-  .content_card_text {
-    margin-top: 25px;
-  }
 }
 
 .button-footer {

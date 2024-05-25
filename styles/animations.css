@@ -65,3 +65,53 @@
   .theme-menu__button:disabled::before {
     animation: menu_button_rrow 0.5s ease-in-out infinite;
   }
+
+  .like-icon .core {
+    fill: transparent;
+    transition: fill 0.3s linear 0.03s;
+  }
+  
+  .like-icon:hover .core {
+    fill: var(--color-text);
+    transition: fill 0.3s linear;
+  }
+  
+  .like-icon:active .core {
+    fill: var(--heart-color);
+    transition: fill 0.3s linear;
+  }
+  
+  .like-icon.is-liked .core {
+    fill: var(--heart-color);
+    transition: fill 0.3s linear;
+  }
+  
+  .like-icon .main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
+  }
+  
+  .like-icon:hover .main-body {
+    fill: var(--color-text);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+  .like-icon:active .main-body {
+    fill: var(--heart-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: var(--heart-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+  
+  .like-icon .contour {
+    fill: var(--color-text);
+    transition: fill 0.1s linear;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: var(--heart-color);
+    transition: fill 0.3s linear 0.06s;
+  }

@@ -15,8 +15,8 @@
     --border-color: rgba(255, 255, 255, 1);
     --heart-color: rgba(255, 0, 0, 1);
     --difference-color: rgba(255, 255, 255, 1);
-    --title-weight-var: "wght" 700;
-    --text-weight-var: "wght" 400;
+    --title-weight-var: 700;
+    --text-weight-var: 400;
     --background-image:
     repeating-linear-gradient(
         to right, 
@@ -49,8 +49,8 @@
     --border-color: rgba(0, 0, 0, 1);
     --heart-color: rgba(255, 0, 0, 1);
     --difference-color: rgba(0, 204, 20, 1);
-    --title-weight-var: "wght" 785;
-    --text-weight-var: "wght" 465;
+    --title-weight-var: 785;
+    --text-weight-var: 465;
     --background-image:
     repeating-linear-gradient(
         to right, 
@@ -84,8 +84,8 @@
     --border-color: rgba(0, 0, 0, 1);
     --heart-color: rgba(255, 0, 0, 1);
     --difference-color: rgba(0, 204, 20, 1);
-    --title-weight-var: "wght" 785;
-    --text-weight-var: "wght" 465;
+    --title-weight-var: 785;
+    --text-weight-var: 465;
     --background-image:    repeating-linear-gradient(
         to right, 
         rgb(0, 0, 0), 
